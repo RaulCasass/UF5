@@ -19,3 +19,9 @@ img {
 pre {
     font-size:20px
 }
+body {
+    background-image:url(../Imatges/que-coche-es-rayo-mcqueen-202066150-1585635516_1.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
