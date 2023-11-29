@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/practica3.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+<h1>Formulario</h1>
+
+<form action="/procesar_formulario" method="post">
+    <fieldset>
+        <legend class="basic-info">Datos Personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" name="altura" min="0" max="300" value="170" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com">
+        <br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </fieldset>
+    <fieldset>
+        <legend class="nationality">Nacionalidad</legend>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select id="nacionalidad" name="nacionalidad" required>
+            <option value="espanola">Española</option>
+            <option value="comunitario">Comunitaria (UE)</option>
+            <option value="no_comunitario">No Comunitaria</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend class="basic-info">Estudios</legend>
+        <label for="estudio">Estudios:</label>
+        <select id="estudio" name="estudio" required>
+            <option value="ESO">ESO</option>
+            <option value="GM">GM</option>
+            <option value="GS">GS</option>
+            <option value="universidad">Universidad</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend class="languages">Idiomas</legend>
+        <label>Idiomas:</label>
+        <input type="checkbox" id="catalan" name="idiomas[]" value="catalan">
+        <label for="catalan">Catalán</label>
+        <input type="checkbox" id="castellano" name="idiomas[]" value="castellano">
+        <label for="castellano">Castellano</label>
+        <input type="checkbox" id="ingles" name="idiomas[]" value="ingles">
+        <label for="ingles">Inglés</label>
+        <input type="checkbox" id="aleman" name="idiomas[]" value="aleman">
+        <label for="aleman">Alemán</label>
+    </fieldset>
+    <input type="submit" value="Enviar">
+</form></body>
+</html>
+
+
+
+

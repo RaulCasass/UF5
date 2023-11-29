@@ -1,0 +1,33 @@
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+legend.basic-info {
+    color: blue;
+    font-style: italic;
+}
+
+legend.nationality {
+    color: orange;
+    font-style: italic;
+}
+
+legend.languages {
+    color: red;
+    font-style: italic;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+}
+
