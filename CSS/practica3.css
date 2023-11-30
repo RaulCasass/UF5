@@ -4,30 +4,34 @@ fieldset {
     margin-bottom: 10px;
 }
 
-legend.basic-info {
+legend.datos {
     color: blue;
     font-style: italic;
 }
 
-legend.nationality {
+legend.nacionalidad {
     color: orange;
     font-style: italic;
 }
 
-legend.languages {
+legend.idiomas {
     color: red;
     font-style: italic;
 }
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: flex-start;
+    height: 100vh; 
     margin: 0;
 }
 
 form {
     width: 80%;
     max-width: 600px;
+    margin-top: 20px; 
 }
-
+h1 {
+    margin: 20px 0;
+}
